@@ -1,30 +1,34 @@
 <template>
-  <div id="nav">
+  <!-- <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
+  </div> -->
+  <div id="nav" class="d-flex align-items-center p-3">
+    <img src="@/assets/logo.png" alt="" />
+    <h1 class="flex-grow-1">AnyVersary</h1>
+    <p class="mb-0">
+      Input your Anniversary and find all your other "Versaries"
+    </p>
   </div>
   <router-view />
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<style lang="sass">
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap')
 
-#nav {
-  padding: 30px;
+#app
+  font-family: 'Roboto', sans-serif
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+#nav
+  img
+    height: 80px
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+  // a {
+  //   font-weight: bold;
+  //   color: #2c3e50;
+
+  //   &.router-link-exact-active {
+  //     color: #42b983;
+  //   }
+  // }
 </style>
